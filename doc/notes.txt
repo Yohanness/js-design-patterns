@@ -1,0 +1,13 @@
+1) Patterns for construction
+
+ - constructor pattern:
+   - using proto
+   - using constructor keyword
+   - using class keyword
+
+   Use new keyword to instantiate classes
+
+ - module pattern :
+   - Good for a service, e.g database module to handle DB calls
+
+
