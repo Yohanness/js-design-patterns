@@ -10,4 +10,9 @@
  - module pattern :
    - Good for a service, e.g database module to handle DB calls
 
+ - factory pattern :
+   - simplifies object cretion
+   - creating different objects based on need
+   - repo creation (user, tasks, project ...)
+
 
