@@ -13,6 +13,14 @@ console.log(task1);
 task1.save();
 
 
+var obj = function(){
+  return {name: 'toto',
+  desc: 'Desc'
+}
+}();
+console.log(Object.keys(obj));
+console.log(obj.prototype);
+
 
 // var task2 = new Task({name: 'Create demo for modules'});
 // var task3 = new Task({name: 'Create demo for singleton'});

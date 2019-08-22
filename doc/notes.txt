@@ -15,4 +15,9 @@
    - creating different objects based on need
    - repo creation (user, tasks, project ...)
 
+ - singleton pattern :
+   - with node : it is using commonJS, there is caching of module : https://nodejs.org/api/modules.html#modules_caching
+   -
+
+
 
