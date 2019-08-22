@@ -17,7 +17,7 @@
 
  - singleton pattern :
    - with node : it is using commonJS, there is caching of module : https://nodejs.org/api/modules.html#modules_caching
-   -
+     - module.exports = funct()  <<-- see the (), then node caches it
 
 
 
