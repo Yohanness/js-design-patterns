@@ -1,3 +1,5 @@
+For Angular demo : https://next.plnkr.co/edit/zhKKBUDPEJG18LOn
+
 1) Patterns for construction
 
  - constructor pattern:
@@ -17,7 +19,21 @@
 
  - singleton pattern :
    - with node : it is using commonJS, there is caching of module : https://nodejs.org/api/modules.html#modules_caching
-     - module.exports = funct()  <<-- see the (), then node caches it
+     - module.exports = funct()  <<-- see the (), then node caches it and it makes singleton, or exports = new func
+   - with angular : all services are singleton, meaning that app.service('nameService', serviceFunc); will add 'new' before serviceFunc to exec it
 
 
+2) Structurals design patterns
+
+How objects are made up and relationships between them
+Extend or Simplify functionnality
+
+ - Decorator pattern 
+  - Add new feature to obj without to much intrusion
+  - Task.prototype.save.call(this); // call original function and passes this context
+  - UrgentTask.prototype = Object.create(Task.prototype); // do not assign = directly or if changes in Utask proto it will affect task proto
+  - for Angular services : use app.decorator and return $delegate to return same service
+
+ - Facade pattern
+  - 
 

@@ -1,6 +1,6 @@
 var taskHandler = require('./taskHandler');
-var repo = require('./Repo');
-var myrepo = repo();
+var myrepo = require('./Repo');
+
 
 myrepo.save('from Main');
 myrepo.save('from Main');

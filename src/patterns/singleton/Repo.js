@@ -12,4 +12,6 @@ var repo = function() {
   }
 }
 
-module.exports = repo;
+// module.exports = repo();
+// OR
+module.exports = new repo;
