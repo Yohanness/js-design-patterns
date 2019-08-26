@@ -28,12 +28,24 @@ For Angular demo : https://next.plnkr.co/edit/zhKKBUDPEJG18LOn
 How objects are made up and relationships between them
 Extend or Simplify functionnality
 
- - Decorator pattern 
+ - Decorator pattern
   - Add new feature to obj without to much intrusion
   - Task.prototype.save.call(this); // call original function and passes this context
   - UrgentTask.prototype = Object.create(Task.prototype); // do not assign = directly or if changes in Utask proto it will affect task proto
   - for Angular services : use app.decorator and return $delegate to return same service
 
  - Facade pattern
-  - 
+  - Do a wrapper/interface module which return {api}
+
+ - Flyweight pattern
+   - conserves memory by sharing portions of an object between objects
+     - smaller mem footprint
+     - only if large number of objects
+
+3) Behavioral pattern :
+
+concerned about the assignement of responsabilities between objs and how they communicate
+
+ - Observer pattern :
+   - One object focal point
 

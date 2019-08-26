@@ -25,24 +25,6 @@ var TaskService = function () {
   }
 }();
 
-var TaskServiceWrapper = function () {
-
-  console.log('In wrapper ');
-  var completeAndNotify = function(task) {
-    console.log('In wrapper completeAndNotify');
-    TaskService.complete(myTask);
-    if (myTask.completed == true) {
-      TaskService.setCompleteDate(myTask);
-      TaskService.notifyCompletion(myTask,myTask.user);
-      TaskService.save(myTask);
-    }
-  }
-
-  return {
-    completeAndNotify: completeAndNotify
-  }
-}();
-
 var myTask = new Task({
   name: 'My Task',
   priority: 1,
@@ -53,6 +35,12 @@ var myTask = new Task({
 
 console.log(myTask);
 
-TaskServiceWrapper.completeAndNotify(myTask);
+TaskService.complete(myTask);
+
+if (myTask.completed == true) {
+  TaskService.setCompleteDate(myTask);
+  TaskService.notifyCompletion(myTask,myTask.user);
+  TaskService.save(myTask);
+}
 
 console.log(myTask);
