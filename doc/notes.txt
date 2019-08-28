@@ -49,3 +49,10 @@ concerned about the assignement of responsabilities between objs and how they co
  - Observer pattern :
    - One object focal point
 
+ - Mediator :
+   - controls communication between objects so neither obj has to be coupled to the others
+
+ - Command :
+    - Encapsulates the calling of a method as an object
+  - decouples exec from implementation
+  - supports undo operations
